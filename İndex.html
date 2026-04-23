@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noxium Client | Download</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@500;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #050505;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        h1 { font-family: 'Outfit', sans-serif; }
+        
+        /* Neon Mor Glow Efekti */
+        .glow-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, rgba(0,0,0,0) 70%);
+            z-index: -1;
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 25px rgba(139, 92, 246, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="text-zinc-100 min-h-screen flex items-center justify-center">
+
+    <div class="glow-bg"></div>
+
+    <main class="max-w-2xl w-full px-6 text-center">
+        <div class="mb-10 flex justify-center">
+            <div class="relative">
+                <div class="absolute -inset-1 bg-purple-600 rounded-full blur opacity-25"></div>
+                <img src="44.png" alt="Noxium Logo" class="relative w-32 h-32 md:w-40 md:h-40 object-contain hover:scale-105 transition-transform duration-500">
+            </div>
+        </div>
+
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-4 bg-gradient-to-b from-white via-white to-purple-500 bg-clip-text text-transparent uppercase">
+            NOXIUM
+        </h1>
+        
+        <p class="text-zinc-400 text-lg md:text-xl font-light mb-12 tracking-wide max-w-md mx-auto leading-relaxed">
+            Kusursuz performans, modern arayüz ve en üst düzey client deneyimi.
+        </p>
+
+        <div class="flex flex-col items-center gap-4">
+            <a href="https://workupload.com/file/T8xrYpaU7WU" 
+               target="_blank"
+               class="btn-glow px-12 py-5 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl transition-all duration-300 text-xl flex items-center gap-3 group">
+                <span>DOWNLOAD NOW</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="height="24" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+            </a>
+            <span class="text-zinc-600 text-sm font-medium tracking-widest uppercase">Version 1.0.0 • 120MB</span>
+        </div>
+    </main>
+
+    <footer class="fixed bottom-8 text-zinc-700 text-xs tracking-widest uppercase font-bold">
+        © 2026 NOXIUM CLIENT • POWERED BY VERCEL
+    </footer>
+
+</body>
+</html>
